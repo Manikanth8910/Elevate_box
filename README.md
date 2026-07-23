@@ -100,11 +100,11 @@ The frontend will be accessible at `http://localhost:5173` (or the port specifie
 
 ## 📘 Documentation
 
-- [Deployment Guide](./docs/DEPLOYMENT.md)
-- [Security Posture](./docs/SECURITY.md)
-- [CI/CD Pipeline](./docs/CI_CD.md)
-- [API Reference (OpenAPI)](./docs/openapi.yaml)
-- [Portfolio Presentation](./docs/PORTFOLIO_PRESENTATION.md)
+- [Deployment Guide](./backend/docs/DEPLOYMENT.md)
+- [Security Posture](./backend/docs/SECURITY.md)
+- [CI/CD Pipeline](./backend/docs/CI_CD.md)
+- [API Reference (OpenAPI)](./backend/docs/openapi.yaml)
+- [Portfolio Presentation](./backend/docs/PORTFOLIO_PRESENTATION.md)
 
 ## 🤝 Principles Applied
 
