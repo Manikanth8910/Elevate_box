@@ -1,0 +1,53 @@
+export enum Permission {
+  CREATE_DOC = 'CREATE_DOC',
+  EDIT_OWN_DOC = 'EDIT_OWN_DOC',
+  SUBMIT_DOC = 'SUBMIT_DOC',
+  APPROVE_DOC = 'APPROVE_DOC',
+  REJECT_DOC = 'REJECT_DOC',
+  PUBLISH_DOC = 'PUBLISH_DOC',
+  ARCHIVE_DOC = 'ARCHIVE_DOC',
+  VIEW_USERS = 'VIEW_USERS',
+  VIEW_PUBLISHED = 'VIEW_PUBLISHED',
+  VIEW_REVIEW_QUEUE = 'VIEW_REVIEW_QUEUE',
+
+  // Added missing permissions from compiler output
+  VIEW_PROFILE = 'VIEW_PROFILE',
+  CREATE_DRAFT = 'CREATE_DRAFT',
+  EDIT_OWN_DRAFT = 'EDIT_OWN_DRAFT',
+  SUBMIT_DRAFT = 'SUBMIT_DRAFT',
+  REOPEN_REJECTED = 'REOPEN_REJECTED',
+  VIEW_OWN_HISTORY = 'VIEW_OWN_HISTORY',
+  VIEW_ANY_HISTORY = 'VIEW_ANY_HISTORY',
+  VIEW_ALL_DOCS = 'VIEW_ALL_DOCS',
+  ARCHIVE_ANY_DOC = 'ARCHIVE_ANY_DOC',
+  VIEW_AUDIT_LOGS = 'VIEW_AUDIT_LOGS',
+  VIEW_ANALYTICS = 'VIEW_ANALYTICS',
+  MANAGE_SYSTEM = 'MANAGE_SYSTEM'
+}
+
+export enum Role {
+  VIEWER = 'VIEWER',
+  AUTHOR = 'AUTHOR',
+  REVIEWER = 'REVIEWER',
+  ADMIN = 'ADMIN'
+}
+
+export enum DocumentStatus {
+  DRAFT = 'DRAFT',
+  SUBMITTED = 'SUBMITTED',
+  UNDER_REVIEW = 'UNDER_REVIEW',
+  APPROVED = 'APPROVED',
+  REJECTED = 'REJECTED',
+  PUBLISHED = 'PUBLISHED',
+  ARCHIVED = 'ARCHIVED'
+}
+
+export interface APIResponse<T = any> {
+  success: boolean;
+  message?: string;
+  data?: T | null;
+  error?: string;
+  meta?: any;
+  timestamp?: string;
+  requestId?: string;
+}
